@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
-  s.name              = %q{refinerycms-theming}
+  s.name              = %q{refinerycms-domain-theming}
   s.version           = %q{1.0.1}
-  s.description       = %q{Theming functionality for the Refinery CMS project, extracted from Refinery CMS core.}
+  s.description       = %q{Domain Theming functionality for the Refinery CMS project, extracted from Refinery CMS core.}
   s.date              = %q{2011-04-05}
   s.summary           = %q{Theming functionality for the Refinery CMS project.}
   s.email             = %q{info@refinerycms.com}
@@ -43,7 +43,7 @@ Gem::Specification.new do |s|
     'lib/theming.rb',
     'license.md',
     'readme.md',
-    'refinerycms-theming.gemspec',
+    'refinerycms-domain-theming.gemspec',
     'themes',
     'themes/demolicious',
     'themes/demolicious/images',
