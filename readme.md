@@ -17,7 +17,10 @@ configuration.
        }
     end
 
-Other than that follow the regular Refinery Theming suggestions
+This will use the "dog" theme for any request for dogs.com and "cats"
+for any requests for cats.com
+
+Other than that follow the regular Refinery Theming suggestions.
 
 ## Introduction
 
