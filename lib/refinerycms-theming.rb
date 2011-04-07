@@ -17,10 +17,12 @@ module Refinery
             # remove any paths relating to any theme.
             view_paths.reject! { |v| v.to_s =~ %r{^themes/} }
 
+            domain = request.domain(3)
+            
             # add back theme paths if there is a theme present.
-            if (theme = ::Theme.current_theme(request.env)).present?
+            if (theme = ::Theme.for_domain(domain)).present?
               # Set up view path again for the current theme.
-              view_paths.unshift ::Theme.current_theme_dir.join("views").to_s
+              view_paths.unshift ::Theme.dir_for(domain).join("views").to_s
 
               # Ensure that routes within the application are top priority.
               # Here we grab all the routes that are under the application's view folder

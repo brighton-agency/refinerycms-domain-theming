@@ -1,4 +1,23 @@
-# Themes
+# Themes by Domain
+
+## Differences from Plain Refinery Theming
+
+This version is a fork and modification of [refinerycms-theming](http://github.com/resolve/refinerycms-theming)
+   
+Instead of allowing Themes to be set in a setting in the admin panel,
+it allows a mapping from domain names to themes
+
+This expects a hash 'theme_mapping' hanging off of your applications
+configuration.
+
+    FooApp::Application.configure do
+       config.theme_mapping = {
+        "dogs.com" => "dog",
+        "cats.com" => "cat"
+       }
+    end
+
+Other than that follow the regular Refinery Theming suggestions
 
 ## Introduction
 
