@@ -5,7 +5,7 @@ module Theme
     end
     
     def for_domain(domain)
-      NppNaturaSites::Application.config.theme_mapping[domain]
+      NppNaturaSites::Application.config.theme_mapping[domain] || NppNaturaSites::Application.config.theme_mapping[:default]
     end
 
     def dir_for(domain)

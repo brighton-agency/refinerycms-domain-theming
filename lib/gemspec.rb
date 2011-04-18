@@ -5,7 +5,7 @@ files = Dir[%q{**/*}].flatten.reject{|f| f =~ /\.gem$/}
 
 gemspec = <<EOF
 Gem::Specification.new do |s|
-  s.name              = %q{refinerycms-theming}
+  s.name              = %q{refinerycms-domain-theming}
   s.version           = %q{#{version}}
   s.description       = %q{Theming functionality for the Refinery CMS project, extracted from Refinery CMS core.}
   s.date              = %q{#{Time.now.strftime('%Y-%m-%d')}}
@@ -27,4 +27,4 @@ Gem::Specification.new do |s|
 end
 EOF
 
-File.open(File.expand_path("../../refinerycms-theming.gemspec", __FILE__), 'w').puts(gemspec)
+File.open(File.expand_path("../../refinerycms-domain-theming.gemspec", __FILE__), 'w').puts(gemspec)

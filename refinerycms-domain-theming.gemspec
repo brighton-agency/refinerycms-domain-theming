@@ -38,7 +38,7 @@ Gem::Specification.new do |s|
     'lib/generators/refinery_theme/USAGE',
     'lib/refinery',
     'lib/refinery/theme_server.rb',
-    'lib/refinerycms-theming.rb',
+    'lib/refinerycms-domain-theming.rb',
     'lib/theme.rb',
     'lib/theming.rb',
     'license.md',
