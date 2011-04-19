@@ -20,11 +20,12 @@ module Refinery
 
 
             domain = request.domain(3)
-
+          
             # add back theme paths if there is a theme present.
             if (theme = ::Theme.for_domain(domain)).present?
+              Rails.logger.info ::Theme.dir_for(domain)
               # Set up view path again for the current theme.
-              view_paths.unshift ::Theme.dir_for(theme).join("views").to_s
+              view_paths.unshift ::Theme.dir_for(domain).join("views").to_s
 
               # Ensure that routes within the application are top priority.
               # Here we grab all the routes that are under the application's view folder
